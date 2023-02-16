@@ -20,34 +20,14 @@ function createGalleryCardsMarkup(galleryItems) {
    
 };
 
-document.addEventListener("DOMContentLoaded", function () {
-  var lightbox = new SimpleLightbox(".gallery a", {
-    captionsData: `alt`,
-    captionDelay: 250,
-  });
-   
-});
 
 
-// gallery.addEventListener(`click`, onGalleryClick);
+var lightbox = new SimpleLightbox(".gallery a", {
+ captionsData: `alt`,
+ captionDelay: 250,
+ });
 
 
-
-// function onGalleryClick(evt) {
-// const target = evt.target;
-
-// if (!target.classList.contains(`gallery__image`)) {
-// return;
-// }
-
-// evt.preventDefault();
-
-// var lightbox = new SimpleLightbox(".gallery a", {
-//   captionSelector: `alt`,
-//   captionDelay: 250
- 
-// });
-// };
 
 
 console.log(galleryItems);
